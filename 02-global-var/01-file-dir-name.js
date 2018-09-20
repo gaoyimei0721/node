@@ -7,6 +7,7 @@ var fileName = __dirname + '/views/view.html';  //方案一：不好，没有考
 */
 
 //方案二：不好，代码复杂，平台考虑不全面
+/*
 switch(process.platform){
   case 'linux':
     fileName = __dirname + '/views/view.html';
@@ -21,10 +22,10 @@ switch(process.platform){
 }
 
 console.log('fileName:',fileName);
+*/
 
-//方案三
-/*
+//方案三：最佳
 const path = require('path');
 fileName = path.join(__dirname,'views','login.html');
 console.log('fileName:',fileName);
-*/
+
