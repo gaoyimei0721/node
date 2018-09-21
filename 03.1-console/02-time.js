@@ -11,6 +11,7 @@ function longTask(){
     for(var j=0; j<10000; j++){
       n = i * j;
     }
+
   }
 
   return n;
